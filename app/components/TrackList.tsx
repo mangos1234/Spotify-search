@@ -2,7 +2,6 @@ import Image from "next/image";
 import Track from "../types/Track";
 
 export default function TrackList({ trackList }: { trackList: Track[] }) {
-    console.log('track list inside of track list: ', trackList);
     return (
         <div className="my-10">
             {trackList.map((track: Track, index:number) => {
